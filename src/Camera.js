@@ -51,7 +51,7 @@ const MessageUpload = () => {
             return new Promise((resolve, reject) => {
                 uploadTask.on("state_changed",
                     (snapshot) => {
-                        // Tiến trình tải lên (có thể hiển thị cho người dùng)
+                      
                     },
                     (error) => reject(error),
                     () => {
@@ -97,17 +97,7 @@ const MessageUpload = () => {
 
     return (
         <div className="message-container">
-            <h6>
-                💌 Lời kêu gọi từ cô dâu chú rể 💌 <br />
-                Chào các bạn yêu dấu! 🥰
-                Ngày vui của chúng tôi đã đến, và chúng tôi rất mong muốn được lưu giữ những khoảnh khắc tuyệt vời này cùng tất cả các bạn! 📸 Nhưng không chỉ dừng lại ở ảnh đẹp, chúng tôi mong muốn nhận được những thông điệp vui vẻ, những lời chúc ngọt ngào (và có thể một chút "hóm hỉnh" nữa 😉).
-                Vì vậy, chúng tôi rất mong các bạn hãy gửi cho chúng tôi một bức ảnh thật xinh đẹp (hoặc một kiểu selfie "siêu lầy" nếu thích 😜) kèm theo một thông điệp chúc phúc. Bạn có thể là những người bạn thân thiết, người thân yêu, hay thậm chí là những người đã khiến chúng tôi... đỏ mặt trong ngày cưới (đừng ngại chia sẻ những bí mật nhé! 😂).
-                Gửi ảnh và thông điệp cho chúng tôi, vì mỗi lời chúc, mỗi bức ảnh sẽ trở thành một kỷ niệm không thể quên trong cuộc đời của chúng tôi! 💖
-                Đừng ngại chia sẻ những khoảnh khắc đẹp, một câu chuyện hài hước hay thậm chí là một lời nhắn nhỏ bé để chúng tôi nhớ mãi về ngày tuyệt vời này. 🥳
-                Cảm ơn các bạn rất nhiều vì đã cùng chúng tôi chúc mừng và đồng hành trong ngày trọng đại này! 💍✨
-                👉 Nhớ chọn ảnh và gửi thông điệp nhé! Chúng tôi đợi đấy!
-            </h6>
-
+           
             <input
                 type="file"
                 accept="image/*"
@@ -115,7 +105,7 @@ const MessageUpload = () => {
                 id="file-input"
                 multiple
             />
-            <label htmlFor="file-input">Chọn ảnh</label>
+         
 
             <div className="selected-images">
                 {images.map((image, index) => (
@@ -139,6 +129,7 @@ const MessageUpload = () => {
             <button onClick={handleSubmit} disabled={uploading}>
                 {uploading ? "Đang gửi..." : "Gửi thông điệp"}
             </button>
+            <h1> BUỒN NGỦ RỒI HUHU</h1>
         </div>
     );
 };
