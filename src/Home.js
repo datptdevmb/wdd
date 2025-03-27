@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./styles.css";
 import { storage } from "./firebaseConfig";
 import { ref, listAll, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import wdImage from "./assets/wd.jpg";
+import wdImage from "./assets/wdd.jpg";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import imageCompression from "browser-image-compression";
 
@@ -101,18 +101,7 @@ const Home = () => {
                     <h2>VĂN XUYÊN & DIỄM MY</h2>
                 </div>
                 <div className="animated-text">
-                    <h6>💖 LỜI CẢM ƠN TỪ GIA ĐÌNH 💖 <br/>
-
-                        Gia đình chúng tôi xin gửi lời cảm ơn chân thành đến tất cả quý quan khách, họ hàng và bạn bè đã tham gia chung vui trong ngày trọng đại này. Sự hiện diện của các bạn chính là món quà quý giá nhất dành cho chúng tôi! 🎁🎉
-
-                        Cảm ơn những lời chúc, món quà và tình cảm chân thành! Để lưu giữ những khoảnh khắc đẹp, xin mời mọi người chia sẻ ảnh kỷ niệm tại: [🔗 Link Upload Ảnh] hoặc gửi vào nhóm gia đình nhé! 📸
-
-                        Mỗi bức ảnh sẽ là một kỷ niệm quý giá, và ai biết được, có thể sau đám cưới này, những “tình yêu bất ngờ” sẽ nở rộ nhờ một bức ảnh selfie dễ thương hay một khoảnh khắc thú vị nào đó đấy! 😜
-
-                        Nhớ bấm "Gửi thông điệp" nha, vì những lời chúc và ảnh đẹp của các bạn sẽ làm ngày vui này thêm trọn vẹn! 💌✨
-
-                        Cảm ơn mọi người đã cùng chúng tôi làm nên một ngày tuyệt vời và đầy kỷ niệm! 💍✨
-                    </h6>
+                    
                 </div>
 
                 {/* Chọn ảnh từ thư viện */}
