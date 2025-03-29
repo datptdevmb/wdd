@@ -144,6 +144,7 @@ const Homepage = () => {
                                 </button>
                                 <button
                                     onClick={handleUpload}
+                                    disabled={uploading}
                                     style={{
                                         flex: 1,
                                         padding: "12px",
