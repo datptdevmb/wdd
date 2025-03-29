@@ -14,7 +14,7 @@ const Homepage = () => {
     const fileInputRef = useRef(null);
     const [message, setMessage] = useState("");
     const [uploading, setUploading] = useState(false);
-    const dragons = Array.from({ length: 10 }, (_, i) => i + 1);
+    const dragons = Array.from({ length: 7 }, (_, i) => i + 1);
 
 
     const compressImage = async (file) => {
@@ -129,7 +129,7 @@ const Homepage = () => {
                                         borderRadius: "8px",
                                         border: "none",
                                         background: "#f1f1f1",
-                                        color: "#333",
+                                        color: "#333",  
                                         cursor: "pointer",
                                         marginRight: "10px",
                                         transition: "0.3s",
