@@ -117,6 +117,8 @@ const Homepage = () => {
                                     background: "#f9f9f9",
                                     transition: "0.3s",
                                 }}
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
                                 onFocus={(e) => e.target.style.border = "1px solid #007bff"}
                                 onBlur={(e) => e.target.style.border = "1px solid #ccc"}
                             />
